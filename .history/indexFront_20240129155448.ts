@@ -6,7 +6,7 @@ async function getColors() {
         const json = (await res.json()) as ColorPalette[];
 
         if(json && json.length > 0){
-            const items:HTMLDivElement[] = json.map((item) =>{
+            const items = json.map((item) =>{
                 const colorsContainer = document.createElement('div');
                 colorsContainer.classList.add('colorContainer');
 
@@ -36,9 +36,7 @@ async function getColors() {
 
                 const container = document.createElement('div');
                 colorsContainer.append(div1, div2, div3, div4);
-                container.append(div5, colorsContainer);
-
-                return container;
+                container.append(div5, colorsContainer)
             });
         }
     } catch (error) {}
