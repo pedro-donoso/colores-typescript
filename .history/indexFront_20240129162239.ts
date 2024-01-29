@@ -18,23 +18,23 @@ async function getColors() {
                 div1.style.backgroundColor = item.color1;
 
                 const div2 = document.createElement("div");
-                div2.classList.add("color");
-                div2.textContent = item.color2;
-                div2.style.backgroundColor = item.color2;
+                colorsContainer.classList.add("color");
+                div1.textContent = item.color2;
+                div1.style.backgroundColor = item.color2;
 
                 const div3 = document.createElement("div");
-                div3.classList.add("color");
-                div3.textContent = item.color3;
-                div3.style.backgroundColor = item.color3;
+                colorsContainer.classList.add("color");
+                div1.textContent = item.color3;
+                div1.style.backgroundColor = item.color3;
 
                 const div4 = document.createElement("div");
-                div4.classList.add("color");
-                div4.textContent = item.color4;
-                div4.style.backgroundColor = item.color4;
+                colorsContainer.classList.add("color");
+                div1.textContent = item.color4;
+                div1.style.backgroundColor = item.color4;
 
                 const div5 = document.createElement("div");
                 div5.textContent = item.title;
-                div5.classList.add("title");
+                colorsContainer.classList.add("title");
 
                 const container = document.createElement('div');
                 colorsContainer.append(div1, div2, div3, div4);

@@ -34,7 +34,7 @@ async function getColors() {
 
                 const div5 = document.createElement("div");
                 div5.textContent = item.title;
-                div5.classList.add("title");
+                colorsContainer.classList.add("title");
 
                 const container = document.createElement('div');
                 colorsContainer.append(div1, div2, div3, div4);
