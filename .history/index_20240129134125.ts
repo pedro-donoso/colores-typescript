@@ -3,14 +3,13 @@ import express, { Express, Request, Response } from "express";
 import { randomUUID } from "crypto";
 import { ColorRequest } from "./types/types";
 import { ColorPalette } from "./types/types";
-import bodyParser from 'body-parser'; // Importa bodyParser
 
 // Creación de una instancia de la aplicación Express
 const app: Express = express();
 
 // Configuración de middleware para servir archivos estáticos y analizar cuerpos de solicitud codificados
 app.use(express.static("./public"));
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.urlencoded);
 
 // Arreglo para almacenar paletas de colores registradas
 const colors: ColorPalette[] = [];

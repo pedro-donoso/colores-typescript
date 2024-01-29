@@ -10,7 +10,7 @@ const app: Express = express();
 
 // Configuración de middleware para servir archivos estáticos y analizar cuerpos de solicitud codificados
 app.use(express.static("./public"));
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParserexpress.urlencoded);
 
 // Arreglo para almacenar paletas de colores registradas
 const colors: ColorPalette[] = [];
