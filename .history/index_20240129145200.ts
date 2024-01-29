@@ -47,9 +47,7 @@ app.post("/register", (req: Request, res: Response) => {
   }
 });
 
-app.get('/getAll', (req:Request, res:Response) =>{
-    res.json(colors);
-});
+app.get('/')
 
 // Iniciar el servidor en el puerto 3000
 app.listen(3000, () => {
