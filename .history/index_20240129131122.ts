@@ -32,18 +32,13 @@ app.post('/register', (req:Request, res: Response) =>{
     });
 
     if(repeated){
-        res.redirect("/error.html");
+        res.send("Colors are repeated");
     } else {
         colors.push({
-            id: randomUUID(),
-            title,
-            color1,
-            color2,
-            color3,
-            color4,
-        });
-        res.redirect("/")
+            id
+        })
     }
+
 });
 
 app.listen(3000, ()=>{

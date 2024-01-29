@@ -25,25 +25,7 @@ app.post('/register', (req:Request, res: Response) =>{
     });
 
     let repeated = false;
-    map.forEach((value, key) =>{
-        if(value > 1){
-            repeated = true;
-        }
-    });
-
-    if(repeated){
-        res.redirect("/error.html");
-    } else {
-        colors.push({
-            id: randomUUID(),
-            title,
-            color1,
-            color2,
-            color3,
-            color4,
-        });
-        res.redirect("/")
-    }
+    map.forEach((value, key) =>)
 });
 
 app.listen(3000, ()=>{

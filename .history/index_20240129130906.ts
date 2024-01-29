@@ -31,19 +31,8 @@ app.post('/register', (req:Request, res: Response) =>{
         }
     });
 
-    if(repeated){
-        res.redirect("/error.html");
-    } else {
-        colors.push({
-            id: randomUUID(),
-            title,
-            color1,
-            color2,
-            color3,
-            color4,
-        });
-        res.redirect("/")
-    }
+    
+
 });
 
 app.listen(3000, ()=>{
