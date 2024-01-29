@@ -27,12 +27,8 @@ async function getColors() {
 
                 const div4 = document.createElement("div");
                 colorsContainer.classList.add("color");
-                div1.textContent = item.color4;
-                div1.style.backgroundColor = item.color4;
-
-                const div5 = document.createElement("div");
-                div5.textContent = item.title;
-                colorsContainer.classList.add("title");
+                div1.textContent = item.color1;
+                div1.style.backgroundColor = item.color1;
             });
         }
 

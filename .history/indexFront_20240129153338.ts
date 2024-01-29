@@ -33,6 +33,8 @@ async function getColors() {
                 const div5 = document.createElement("div");
                 div5.textContent = item.title;
                 colorsContainer.classList.add("title");
+                div1.textContent = item.color4;
+                div1.style.backgroundColor = item.color4;
             });
         }
 
