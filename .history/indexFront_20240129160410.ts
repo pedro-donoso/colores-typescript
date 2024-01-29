@@ -1,7 +1,5 @@
 import { ColorPalette } from "./types/types";
 
-getColors();
-
 async function getColors() {
     try {
         const res = await fetch("/getAll");

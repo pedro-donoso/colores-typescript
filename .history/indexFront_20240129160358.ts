@@ -1,7 +1,5 @@
 import { ColorPalette } from "./types/types";
 
-getColors();
-
 async function getColors() {
     try {
         const res = await fetch("/getAll");
@@ -43,7 +41,7 @@ async function getColors() {
                 return container;
             });
 
-            document.querySelector("#items")?.append(...items);
+            document.querySelector("#items")?
         }
     } catch (error) {}
 }
